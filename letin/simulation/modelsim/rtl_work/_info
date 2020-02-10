@@ -1,0 +1,790 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Administrator/Desktop/letin-processor/letin/simulation/modelsim
+Ealu
+Z1 w1559006369
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8C:/Users/Administrator/Desktop/letin-processor/letin/ALU.vhd
+Z8 FC:/Users/Administrator/Desktop/letin-processor/letin/ALU.vhd
+l0
+L6
+VeN2EkB23YaXUjln]dloz[0
+!s100 ?AX?NMz8DNgI_Ok`U^PdL0
+Z9 OV;C;10.5b;63
+31
+Z10 !s110 1559082575
+!i10b 1
+Z11 !s108 1559082575.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/ALU.vhd|
+Z13 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/ALU.vhd|
+!i113 1
+Z14 o-93 -work work
+Z15 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 alu 0 22 eN2EkB23YaXUjln]dloz[0
+l90
+L20
+VPKh@VETPnUea[?@8l>NEO0
+!s100 _mD[BSh4BXMHjzfF_6@h?2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ealu_add
+Z16 w1558701938
+R3
+R4
+R2
+R5
+R6
+R0
+Z17 8C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_add.vhd
+Z18 FC:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_add.vhd
+l0
+L6
+VlYm4][]1jjo@PHeDQn6NT0
+!s100 _[K;Ob3zWf[?SF^N0PBdJ3
+R9
+31
+Z19 !s110 1559082574
+!i10b 1
+Z20 !s108 1559082574.000000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_add.vhd|
+Z22 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_add.vhd|
+!i113 1
+R14
+R15
+Artl
+R3
+R4
+R2
+R5
+R6
+DEx4 work 7 alu_add 0 22 lYm4][]1jjo@PHeDQn6NT0
+l20
+L18
+VIl:gOcNAIBnQE=DT3I68g1
+!s100 IEI4`TI^;NzTe^Q2iSIfY2
+R9
+31
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R14
+R15
+Ealu_div
+Z23 w1558702041
+R3
+R4
+R2
+R5
+R6
+R0
+Z24 8C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_div.vhd
+Z25 FC:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_div.vhd
+l0
+L6
+V`^UcZ]DV0oSS2_SeNii=M3
+!s100 cgn93mHe=5VHIPz2`DSG73
+R9
+31
+R19
+!i10b 1
+R20
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_div.vhd|
+Z27 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_div.vhd|
+!i113 1
+R14
+R15
+Artl
+R3
+R4
+R2
+R5
+R6
+DEx4 work 7 alu_div 0 22 `^UcZ]DV0oSS2_SeNii=M3
+l26
+L19
+VNgg1<o4jQ[lIdf`I@J7mM1
+!s100 fjgMK]L48VREI_4X;GGcl2
+R9
+31
+R19
+!i10b 1
+R20
+R26
+R27
+!i113 1
+R14
+R15
+Ealu_mul
+R16
+R3
+R4
+R2
+R5
+R6
+R0
+Z28 8C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_mul.vhd
+Z29 FC:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_mul.vhd
+l0
+L6
+VbXXNfn7`J`QB`BJHP_0i:1
+!s100 ddD]B[l9^3ddP4S?[77mo0
+R9
+31
+R19
+!i10b 1
+R20
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_mul.vhd|
+Z31 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_mul.vhd|
+!i113 1
+R14
+R15
+Artl
+R3
+R4
+R2
+R5
+R6
+DEx4 work 7 alu_mul 0 22 bXXNfn7`J`QB`BJHP_0i:1
+l25
+L18
+VQe^HC;>MI<gBgBc1zn`bz1
+!s100 aK4^PnzJ98EQ:N3_i56jY0
+R9
+31
+R19
+!i10b 1
+R20
+R30
+R31
+!i113 1
+R14
+R15
+Ealu_sub
+R16
+R3
+R4
+R2
+R5
+R6
+R0
+Z32 8C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_sub.vhd
+Z33 FC:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_sub.vhd
+l0
+L6
+VG0o:Gf0kHl0mWmS=OS;Fg3
+!s100 K7XWHnmjUXOlg>4C:fTQ51
+R9
+31
+R19
+!i10b 1
+R20
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_sub.vhd|
+Z35 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/arithmetic/ALU_sub.vhd|
+!i113 1
+R14
+R15
+Artl
+R3
+R4
+R2
+R5
+R6
+DEx4 work 7 alu_sub 0 22 G0o:Gf0kHl0mWmS=OS;Fg3
+l20
+L18
+VT_`]Jem`D<mLbSOQF181@3
+!s100 I^4`X?l952Gh58LSZW>Fe3
+R9
+31
+R19
+!i10b 1
+R20
+R34
+R35
+!i113 1
+R14
+R15
+Ebuffered_reg_16bit
+Z36 w1558612621
+R5
+R6
+R0
+Z37 8C:/Users/Administrator/Desktop/letin-processor/letin/general/buffered_reg_16bit.vhd
+Z38 FC:/Users/Administrator/Desktop/letin-processor/letin/general/buffered_reg_16bit.vhd
+l0
+L4
+V0AJX?6_Vm=J^LKc3k3UXk1
+!s100 LVF?Z2BO4^K5Ckl^SQfeR2
+R9
+31
+R10
+!i10b 1
+R11
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/general/buffered_reg_16bit.vhd|
+Z40 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/general/buffered_reg_16bit.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R5
+R6
+DEx4 work 18 buffered_reg_16bit 0 22 0AJX?6_Vm=J^LKc3k3UXk1
+l47
+L19
+V47@FD9Zf`9bihKCT7A>C32
+!s100 ?<55S5_c_k>IXa0NFDL:[3
+R9
+31
+R10
+!i10b 1
+R11
+R39
+R40
+!i113 1
+R14
+R15
+Econtrol_unit
+Z41 w1559053569
+R2
+R3
+R4
+R5
+R6
+R0
+Z42 8C:/Users/Administrator/Desktop/letin-processor/letin/control_unit.vhd
+Z43 FC:/Users/Administrator/Desktop/letin-processor/letin/control_unit.vhd
+l0
+L6
+VIG6B`ezk31eMJPTC6__a?3
+!s100 X1ofTHNjA@GS3jjXM6Fa@0
+R9
+31
+R10
+!i10b 1
+R11
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/control_unit.vhd|
+Z45 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/control_unit.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 12 control_unit 0 22 IG6B`ezk31eMJPTC6__a?3
+l176
+L37
+VgNI<k2c[]MKZ7PS:4VN]j1
+!s100 YKbHZ>8zG7z<@Y4HFNgn?0
+R9
+31
+R10
+!i10b 1
+R11
+R44
+R45
+!i113 1
+R14
+R15
+Edatapath
+Z46 w1559078204
+R2
+R3
+R4
+R5
+R6
+R0
+Z47 8C:/Users/Administrator/Desktop/letin-processor/letin/datapath.vhd
+Z48 FC:/Users/Administrator/Desktop/letin-processor/letin/datapath.vhd
+l0
+L6
+VTb>cW=TNZ9zU=Wn4ahNl>3
+!s100 YQhP36cAoLLPXkU1NVIz=3
+R9
+31
+R10
+!i10b 1
+R11
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/datapath.vhd|
+Z50 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/datapath.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 8 datapath 0 22 Tb>cW=TNZ9zU=Wn4ahNl>3
+l103
+L32
+VN0Kg=U?CE>DbZD8;c@Eio3
+!s100 TJVGk<PUE7U10cYAA[KZV3
+R9
+31
+R10
+!i10b 1
+R11
+R49
+R50
+!i113 1
+R14
+R15
+Einstruction_decoder
+R41
+R2
+R3
+R4
+R5
+R6
+R0
+Z51 8C:/Users/Administrator/Desktop/letin-processor/letin/instruction_decoder.vhd
+Z52 FC:/Users/Administrator/Desktop/letin-processor/letin/instruction_decoder.vhd
+l0
+L6
+VgnF3Pn^fQEg[PDl[@]=h50
+!s100 <A7BNX]6:?hmnhdHb?1W?1
+R9
+31
+R10
+!i10b 1
+R11
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/instruction_decoder.vhd|
+Z54 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/instruction_decoder.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 19 instruction_decoder 0 22 gnF3Pn^fQEg[PDl[@]=h50
+l38
+L33
+VeU63aH;R7>@ZWMDZ6IPFb0
+!s100 4bTKZ9=o?4T0WUN[Lb62b1
+R9
+31
+R10
+!i10b 1
+R11
+R53
+R54
+!i113 1
+R14
+R15
+Einstruction_fetcher
+Z55 w1558866591
+R2
+R3
+R4
+R5
+R6
+R0
+Z56 8C:/Users/Administrator/Desktop/letin-processor/letin/instruction_fetcher.vhd
+Z57 FC:/Users/Administrator/Desktop/letin-processor/letin/instruction_fetcher.vhd
+l0
+L6
+VzFXT`VXMMfhe:S?4hPoPi1
+!s100 _W3JdD]f_4>8ioYnN9iBQ1
+R9
+31
+R19
+!i10b 1
+R20
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/instruction_fetcher.vhd|
+Z59 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/instruction_fetcher.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 19 instruction_fetcher 0 22 zFXT`VXMMfhe:S?4hPoPi1
+l42
+L26
+VRMTWNQA84hTZ=hIzESgYJ0
+!s100 <`K=>4_297>5WU[k8cF`h1
+R9
+31
+R19
+!i10b 1
+R20
+R58
+R59
+!i113 1
+R14
+R15
+Eletni_processor
+Z60 w1558887980
+R2
+R3
+R4
+R5
+R6
+R0
+Z61 8C:/Users/Administrator/Desktop/letin-processor/letin/letni_processor.vhd
+Z62 FC:/Users/Administrator/Desktop/letin-processor/letin/letni_processor.vhd
+l0
+L6
+Vm8F@ZnhRMO43Q7e725e@63
+!s100 2ASe5LRjSEP[U?Aj_fd9A0
+R9
+31
+Z63 !s110 1559082576
+!i10b 1
+Z64 !s108 1559082576.000000
+Z65 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/letni_processor.vhd|
+Z66 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/letni_processor.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 15 letni_processor 0 22 m8F@ZnhRMO43Q7e725e@63
+l94
+L19
+V<ACONi=n^d2M2eIlkGm?A3
+!s100 ]7W?jX08LgDP5^F;VJ[@z3
+R9
+31
+R63
+!i10b 1
+R64
+R65
+R66
+!i113 1
+R14
+R15
+Ememory_controller
+Z67 w1559082117
+R2
+R5
+R6
+R0
+Z68 8C:/Users/Administrator/Desktop/letin-processor/letin/memory_controller.vhd
+Z69 FC:/Users/Administrator/Desktop/letin-processor/letin/memory_controller.vhd
+l0
+L5
+V:hWbOg`j?fil`3ZfZ957F3
+!s100 flLk8Yme[>VPoTR<;_U@G2
+R9
+31
+R10
+!i10b 1
+R11
+Z70 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/memory_controller.vhd|
+Z71 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/memory_controller.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R2
+R5
+R6
+DEx4 work 17 memory_controller 0 22 :hWbOg`j?fil`3ZfZ957F3
+l55
+L22
+VV54@O@PGN:I8>@6hPjf>C2
+!s100 ]HPL<X70IVS@Sj<OnVb]h2
+R9
+31
+R10
+!i10b 1
+R11
+R70
+R71
+!i113 1
+R14
+R15
+Eonehot_4bit
+Z72 w1558615171
+R3
+R4
+R5
+R6
+R0
+Z73 8C:/Users/Administrator/Desktop/letin-processor/letin/general/onehot_4bit.vhd
+Z74 FC:/Users/Administrator/Desktop/letin-processor/letin/general/onehot_4bit.vhd
+l0
+L7
+VDWXeC[bg5zcR7BeECajl31
+!s100 :h<TD[`UZ]@T;Wj[C99n<1
+R9
+31
+R10
+!i10b 1
+R11
+Z75 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/general/onehot_4bit.vhd|
+Z76 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/general/onehot_4bit.vhd|
+!i113 1
+R14
+R15
+Abehavior
+R3
+R4
+R5
+R6
+DEx4 work 11 onehot_4bit 0 22 DWXeC[bg5zcR7BeECajl31
+l15
+L14
+VWTnC`2f[0bnO4GfBl=oNJ0
+!s100 k_Log=IM>T@:gRXIeWgaV2
+R9
+31
+R10
+!i10b 1
+R11
+R75
+R76
+!i113 1
+R14
+R15
+Eram_main
+R16
+Z77 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+R5
+R6
+R0
+Z78 8C:/Users/Administrator/Desktop/letin-processor/letin/ip/ram_main.vhd
+Z79 FC:/Users/Administrator/Desktop/letin-processor/letin/ip/ram_main.vhd
+l0
+L42
+V?EWL1PXPS4LCRb=D[LKda2
+!s100 VVNhbK6RUnP61`62X17oh0
+R9
+31
+R10
+!i10b 1
+R11
+Z80 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/ip/ram_main.vhd|
+Z81 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/ip/ram_main.vhd|
+!i113 1
+R14
+R15
+Asyn
+R77
+R5
+R6
+DEx4 work 8 ram_main 0 22 ?EWL1PXPS4LCRb=D[LKda2
+l59
+L55
+VaSWi]BZbTOdY6zYhHl`fb2
+!s100 Qid[2TH`1:cS5ZZDhcc8Y1
+R9
+31
+R10
+!i10b 1
+R11
+R80
+R81
+!i113 1
+R14
+R15
+Ereg_16bit
+Z82 w1558611062
+R3
+R4
+R5
+R6
+R0
+Z83 8C:/Users/Administrator/Desktop/letin-processor/letin/general/reg_16bit.vhd
+Z84 FC:/Users/Administrator/Desktop/letin-processor/letin/general/reg_16bit.vhd
+l0
+L6
+Vem`d>iL]EH_n:^Ul;@XH]0
+!s100 m9H=cQ>8YhHdfl@dzWQ1:3
+R9
+31
+R19
+!i10b 1
+R20
+Z85 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/general/reg_16bit.vhd|
+Z86 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/general/reg_16bit.vhd|
+!i113 1
+R14
+R15
+Abehavior
+R3
+R4
+R5
+R6
+DEx4 work 9 reg_16bit 0 22 em`d>iL]EH_n:^Ul;@XH]0
+l24
+L20
+VagWP_zfR4`ckMEJ3R?3g90
+!s100 YfIH6PNzbB?[k9k^]W^DX3
+R9
+31
+R19
+!i10b 1
+R20
+R85
+R86
+!i113 1
+R14
+R15
+Eregister_file
+Z87 w1558705084
+R2
+R5
+R6
+R0
+Z88 8C:/Users/Administrator/Desktop/letin-processor/letin/register_file.vhd
+Z89 FC:/Users/Administrator/Desktop/letin-processor/letin/register_file.vhd
+l0
+L5
+VQJSWG^]f7eMkSJcK55_Jg2
+!s100 kY3F:lWI5z09fnO]U5ZHd0
+R9
+31
+R10
+!i10b 1
+R11
+Z90 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/register_file.vhd|
+Z91 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/register_file.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R2
+R5
+R6
+DEx4 work 13 register_file 0 22 QJSWG^]f7eMkSJcK55_Jg2
+l49
+L20
+V?J_UE@JnDo5`56d_lWfiW3
+!s100 fei1F^aUHke>iFj`@Dd4V3
+R9
+31
+R10
+!i10b 1
+R11
+R90
+R91
+!i113 1
+R14
+R15
+Etestbench_processor
+Z92 w1558889391
+R3
+R4
+R5
+R6
+R0
+Z93 8C:/Users/Administrator/Desktop/letin-processor/letin/testbenches/testbench_processor.vhd
+Z94 FC:/Users/Administrator/Desktop/letin-processor/letin/testbenches/testbench_processor.vhd
+l0
+L8
+VKgUKB=>zEP<oFQ2W<H_Dh1
+!s100 FlX=c7BmUdV88Qn<B4_=W1
+R9
+31
+R63
+!i10b 1
+R64
+Z95 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/testbenches/testbench_processor.vhd|
+Z96 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/testbenches/testbench_processor.vhd|
+!i113 1
+R14
+R15
+Abehavior
+R3
+R4
+R5
+R6
+DEx4 work 19 testbench_processor 0 22 KgUKB=>zEP<oFQ2W<H_Dh1
+l32
+L11
+VDEkjYYUG=9O`5kERJ16G=3
+!s100 zcYJ8jIm6NhRbJKPmOG0I3
+R9
+31
+R63
+!i10b 1
+R64
+R95
+R96
+!i113 1
+R14
+R15
+Etri_state_buffer_16bit
+Z97 w1558610602
+R5
+R6
+R0
+Z98 8C:/Users/Administrator/Desktop/letin-processor/letin/general/tri_state_buffer_16bit.vhd
+Z99 FC:/Users/Administrator/Desktop/letin-processor/letin/general/tri_state_buffer_16bit.vhd
+l0
+L4
+VVm3;OAEZXW?_<m28]LolW0
+!s100 1W;fJQ?nH>DJ4A_:`gB740
+R9
+31
+R10
+!i10b 1
+R20
+Z100 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/letin-processor/letin/general/tri_state_buffer_16bit.vhd|
+Z101 !s107 C:/Users/Administrator/Desktop/letin-processor/letin/general/tri_state_buffer_16bit.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R5
+R6
+DEx4 work 22 tri_state_buffer_16bit 0 22 Vm3;OAEZXW?_<m28]LolW0
+l16
+L14
+V7Te7>oi:?z=M1DKoKUMVl1
+!s100 BUL_3[DGSJ9VfAV4V`JK20
+R9
+31
+R10
+!i10b 1
+R20
+R100
+R101
+!i113 1
+R14
+R15

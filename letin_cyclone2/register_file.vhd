@@ -1,0 +1,89 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+
+entity register_file is
+
+	port (
+		data : inout std_logic_vector(15 downto 0);
+		addr : in std_logic_vector(3 downto 0);
+
+		reset : in std_logic;
+		clk : in std_logic;
+
+		read_enabled   : in std_logic;
+		write_enabled : in std_logic
+	);
+
+end register_file;
+
+architecture behavioral of register_file is
+
+	component buffered_reg_16bit is
+
+		port (
+			input : in std_logic_vector(15 downto 0);
+			reset : in std_logic;
+
+			clk : in std_logic;
+			read_enabled   : in std_logic;
+			write_enabled : in std_logic;
+
+			output : out std_logic_vector(15 downto 0)
+		);
+
+	end component;
+
+
+	component onehot_4bit is
+		port (
+			four_bit : IN std_logic_vector(3 downto 0);
+			onehot	: OUT std_logic_vector(15 downto 0)
+		);
+	end component;
+
+	signal addr_onehot : std_logic_vector(15 downto 0);
+	signal we_all : std_logic_vector(15 downto 0);
+	signal re_all : std_logic_vector(15 downto 0);
+
+begin
+	--##############################################
+	-- Addressing:
+	-- 	00		01		10		11
+	-- 00 aw		bw		cw		dw
+	--	01	bp		sp		si		di
+	--	10	r1		r2		r3		r4
+	--	11	r5		r6		r7		r8
+	--##############################################
+	-- All registers are equally accessable, however,
+	--
+	-- Usage Guide:
+	--	aw -> return value
+	-- -bw, cw, dw -> stack variables(not yet in stack, thus, caller saved regs)
+	--	bp -> base pointer
+	--	sp -> stack pointer
+	--	si -> source address pointer
+	--	di -> destnation address pointer
+	-- r1 ~ r8 -> callee saved regs
+	--##############################################
+
+	addr_decoder: onehot_4bit port map(addr, addr_onehot);
+
+	we_all <= addr_onehot and (15 downto 0 => write_enabled);
+	re_all <= addr_onehot and (15 downto 0 => read_enabled);
+
+	regs: for i in 15 downto 0 generate
+		general_regs: buffered_reg_16bit port map (
+			input	=> data,
+			reset => reset,
+
+			clk => clk,
+			read_enabled => re_all(i),
+			write_enabled => we_all(i),
+
+			output => data
+		);
+	end generate regs;
+
+
+end Behavioral;

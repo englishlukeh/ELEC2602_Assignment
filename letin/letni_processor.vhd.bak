@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity letni_processor is
+
+	port (
+		
+	);
+
+end letni_processor;
+
+architecture behavioral of letni_processor is
+	
+
+	
+	
+begin
+	
+
+end behavioral;

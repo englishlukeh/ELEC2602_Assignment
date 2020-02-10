@@ -1,0 +1,3 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,letni_processor:sys|datapath:sys_datapath|ALU:core_ALU|ALU_mul:mulper|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,letni_processor:sys|datapath:sys_datapath|ALU:core_ALU|ALU_mul:mulper|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1,

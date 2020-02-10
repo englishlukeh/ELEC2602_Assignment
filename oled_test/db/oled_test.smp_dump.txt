@@ -1,0 +1,16 @@
+
+State Machine - |gpio_test|spi_oled_control:oled|state
+Name state.wait7 state.wait6 state.wait5 state.wait4 state.wait3 state.wait2 state.wait1 state.load_data state.transfer_data state.set_page_column3 state.set_page_column2 state.set_page_column state.init 
+state.init 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.set_page_column 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.set_page_column2 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.set_page_column3 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.transfer_data 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.load_data 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.wait1 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.wait2 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.wait3 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.wait4 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.wait5 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.wait6 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.wait7 1 0 0 0 0 0 0 0 0 0 0 0 1 

@@ -1,0 +1,27 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.all;
+library STD;
+use STD.textio.all;  
+
+
+ENTITY testbench_ALU_add IS 
+END testbench_ALU_add;
+
+ARCHITECTURE behavior OF testbench_ALU_add IS
+
+
+	component ALU_add is
+
+		port ( 
+			data : inout std_logic_vector(15 downto 0);
+			addr : in std_logic_vector(15 downto 0);
+		
+			reset : in std_logic;
+			clk : in std_logic;
+		
+			read_enabled   : in std_logic;
+			write_enabled : in std_logic
+		);
+
+	end component;

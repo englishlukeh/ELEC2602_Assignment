@@ -1,0 +1,67 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.all;
+library STD;
+use STD.textio.all;  
+
+
+ENTITY testbench_processor IS 
+END testbench_processor;
+
+ARCHITECTURE behavior OF testbench_processor IS
+
+
+component letni_processor is
+
+	port (
+		system_clk : in std_logic;
+		system_reset : in std_logic;
+		
+		control_unit_state_out: out std_logic_vector(7 downto 0);
+		inst_fetcher_state_out: out std_logic_vector(2 downto 0);
+		instruction_reg_out : out std_logic_vector(31 downto 0)
+	);
+
+end component;
+
+
+	signal cnt: integer:= 0;
+	signal clk_in, reset  : STD_LOGIC:= '0';
+	
+	
+BEGIN
+	
+	-- ------------------ Instantiate modules ------------------
+	
+	
+	cu : letni_processor port map(clk_in, reset);
+	
+	
+   stim_clock: process 
+   begin         
+		wait for 50 ns;
+		clk_in <= not(clk_in);
+	end process;
+	
+   stim_count: process(clk_in) 
+	begin
+		if rising_edge(clk_in) then
+			cnt <= cnt+1;
+		end if;
+	end process;
+
+	
+	process (cnt)
+	begin  
+		case cnt is 
+			-- Reset
+			when 0 to 0	=> reset <= '1';
+			
+			
+			when others => reset <= '0';
+			
+		end case;
+	end process;
+	
+	
+END;

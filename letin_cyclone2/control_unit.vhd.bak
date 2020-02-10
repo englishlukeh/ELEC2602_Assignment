@@ -1,0 +1,180 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity control_unit is
+
+	port (
+
+		reset : in std_logic;
+		clk : in std_logic
+
+	);
+
+end control_unit;
+
+architecture behavioral of control_unit is
+	
+	component memory_controller is
+		port ( 
+			data : inout std_logic_vector(15 downto 0);
+			addr : in std_logic_vector(15 downto 0);
+		
+			reset : in std_logic;
+			clk : in std_logic;
+		
+			read_enabled   : in std_logic;
+			write_enabled : in std_logic
+		);
+	end component;
+	
+	component reg_16bit is
+		port (
+			input		: in std_logic_vector(15 downto 0);
+			clk 		: in std_logic;
+			write_enabled : in std_logic;
+			reset		: in std_logic;
+			output	: out std_logic_vector(15 downto 0)
+		);
+	end component;
+	
+	
+	component instruction_fetcher is
+		port (
+			PC_in : in std_logic_vector(15 downto 0);
+
+			ram_address	: out std_logic_vector(15 downto 0);
+			ram_output : in std_logic_vector(15 downto 0);
+
+			reset_state : in std_logic;
+			reset : in std_logic;
+			clk : in std_logic;
+
+			instruction: out std_logic_vector(31 downto 0);
+			new_struction: out std_logic
+		);
+	end component;
+	
+	-- call them bus because multiple component are going to use it. 
+	-- thus must by tri-state buffered and controled by state.
+	signal mem_data_bus : std_logic_vector(15 downto 0);
+	signal mem_addr_bus : std_logic_vector(15 downto 0);
+	signal mem_re : std_logic;
+	signal mem_we : std_logic;
+	
+	signal pc_we : std_logic;
+	signal pc_data_in : std_logic_vector(15 downto 0);
+	signal pc_out : std_logic_vector(15 downto 0);
+	
+	signal insf_state_reset : std_logic;
+	signal insf_ready : std_logic;
+	signal insf_instruction : std_logic_vector(31 downto 0);
+	
+	
+	signal ctrl_state : std_logic_vector(7 downto 0);
+	
+begin
+
+	--init signals for testing
+	mem_re <= '1';
+	
+
+	pc : reg_16bit port map(
+		input => pc_data_in,
+		clk => clk,
+		write_enabled => pc_we,
+		reset => reset,
+		output => pc_out
+	);
+	
+	pc_data_in <= pc_out + 2; -- create next pc buffer
+	
+	mem_ctrl : memory_controller port map(
+		data => mem_data_bus,
+		addr => mem_addr_bus,
+		
+		reset => reset, -- won't actually clear all memory(just control regs).
+		clk => clk,
+		
+		read_enabled => mem_re,
+		write_enabled => mem_we
+	);
+	
+	
+	ins_fetcher : instruction_fetcher port map(
+		PC_in => pc_out,
+
+		ram_address	=> mem_addr_bus,
+		ram_output => mem_data_bus,
+
+		reset_state => insf_state_reset,
+		reset => reset,
+		clk => clk,
+
+		instruction => insf_instruction,
+		new_struction => insf_ready
+	);
+
+	
+	
+	-- Control Unit State Machine
+	process(clk, reset) begin
+		if reset = '1' then
+			ctrl_state <= x"00";
+			
+		elsif(rising_edge(clk)) then
+			
+			case ctrl_state is
+			
+				when x"00" => --init state
+				
+					ctrl_state <= x"01";
+			
+				when x"01" => --wait for instruction
+				
+					if insf_ready = '1' then
+						ctrl_state <= x"02";
+					else
+						ctrl_state <= x"01";
+					end if;
+				
+				when x"02" => -- inc program counter
+					ctrl_state <= x"01";
+					
+				
+				when others => ctrl_state <= x"00"; 
+			
+			end case;
+			
+		end if;
+	
+	end process;
+	
+	
+	-- Program Counter control logic.
+	pc_reg_ctrl : process(ctrl_state, clk) begin
+		
+		if(ctrl_state = x"02") then --inc program counter
+			pc_we <= '1';
+		else
+			pc_we <= '0';
+		end if;
+	
+	end process;
+	
+	
+	-- Instruction Fetcher control logic.
+	inst_fetch_ctrl : process(ctrl_state, clk) begin
+	
+		case ctrl_state is
+			when x"02" => -- fetch a new instruction..
+				insf_state_reset <= '1';
+				
+			when others => 
+				insf_state_reset <= '0';
+		end case;
+	
+	end process;
+
+end behavioral;

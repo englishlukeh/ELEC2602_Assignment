@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="letin">
+		<CBX_INST_ENTRY INSTANCE_NAME="|inst_device|letni_processor:sys|control_unit:sys_control_unit|memory_controller:mem_ctrl|ram_main:ram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_48e1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|inst_device|letni_processor:sys|datapath:sys_datapath|ALU:core_ALU|ALU_div:divder|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_68m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|inst_device|letni_processor:sys|control_unit:sys_control_unit|memory_controller:mem_ctrl|vram:vram_d|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_uek1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|inst_device|letni_processor:sys|datapath:sys_datapath|ALU:core_ALU|ALU_div:divder|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_3gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|inst_device|letni_processor:sys|datapath:sys_datapath|ALU:core_ALU|ALU_mul:mulper|lpm_mult:Mult0" CBX_FILE_NAME="mult_l8t.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

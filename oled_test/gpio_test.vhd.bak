@@ -1,0 +1,12 @@
+entity gpio_test is
+
+	port (
+		LEDR : out std_logic_vector(4 downto 0);
+		GPIO_0: out std_logic_vector(35 downto 0);
+	);
+end gpio_test;
+
+architecture behavioral of spi_oled_control is
+begin
+	LEDR <='1';
+end behavioral;

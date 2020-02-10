@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity instruction_decoder is -- the combinational part of control unit :)
+
+	port (
+		
+		instruction : in std_logic_vector(31 downto 0)
+		
+		reset : in std_logic;
+		clk : in std_logic;
+		
+		state_out : out std_logic_vector(7 downto 0);
+		inst_fetcher_state_out : out std_logic_vector(2 downto 0);
+		instruction_reg_out : out std_logic_vector(31 downto 0)
+	);
+
+end instruction_decoder;
+
+architecture behavioral of instruction_decoder is
+
+
+	
+begin
+	
+	
+
+end behavioral;

@@ -1,0 +1,93 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'counter[1]'
+Slack : -4.360
+TNS   : -100.343
+
+Type  : Slow Model Setup 'CLK_50'
+Slack : -2.078
+TNS   : -16.624
+
+Type  : Slow Model Setup 'spi_oled_control:oled|shifter_reset'
+Slack : -0.225
+TNS   : -1.286
+
+Type  : Slow Model Hold 'CLK_50'
+Slack : -2.694
+TNS   : -2.694
+
+Type  : Slow Model Hold 'counter[1]'
+Slack : -1.131
+TNS   : -5.000
+
+Type  : Slow Model Hold 'spi_oled_control:oled|shifter_reset'
+Slack : -0.022
+TNS   : -0.071
+
+Type  : Slow Model Recovery 'counter[1]'
+Slack : -0.794
+TNS   : -9.741
+
+Type  : Slow Model Removal 'counter[1]'
+Slack : 0.641
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLK_50'
+Slack : -2.064
+TNS   : -152.683
+
+Type  : Slow Model Minimum Pulse Width 'counter[1]'
+Slack : -2.064
+TNS   : -152.214
+
+Type  : Slow Model Minimum Pulse Width 'spi_oled_control:oled|shifter_reset'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'counter[1]'
+Slack : -1.705
+TNS   : -14.224
+
+Type  : Fast Model Setup 'CLK_50'
+Slack : -1.457
+TNS   : -11.656
+
+Type  : Fast Model Setup 'spi_oled_control:oled|shifter_reset'
+Slack : 0.476
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLK_50'
+Slack : -1.721
+TNS   : -1.721
+
+Type  : Fast Model Hold 'counter[1]'
+Slack : -1.099
+TNS   : -8.339
+
+Type  : Fast Model Hold 'spi_oled_control:oled|shifter_reset'
+Slack : 0.084
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'counter[1]'
+Slack : -0.070
+TNS   : -0.480
+
+Type  : Fast Model Removal 'counter[1]'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLK_50'
+Slack : -1.880
+TNS   : -138.740
+
+Type  : Fast Model Minimum Pulse Width 'counter[1]'
+Slack : -1.880
+TNS   : -132.200
+
+Type  : Fast Model Minimum Pulse Width 'spi_oled_control:oled|shifter_reset'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------
